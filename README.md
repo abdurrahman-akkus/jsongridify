@@ -11,7 +11,7 @@ GRIDIFY.convertToTable(container, data, options)
 ### Parameters
 + container: the DOM element that table is written on
 + data: the rawdata that must be a valid JSON
-+ options: the js object data that is used to generate table properly. It waits for some attributes: [Options](https://github.com/akkus12345/jsongridify "Options")
++ options: the js object data that is used to generate table properly. It waits for some attributes: [Options](https://github.com/akkus12345/jsongridify"Options")
 
 #### Options
 + title: tables title
