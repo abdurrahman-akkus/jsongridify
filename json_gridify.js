@@ -24,49 +24,13 @@ let GRIDIFY = {
     let title = "<h2 class='text-center'>" + options.title + "</h2>";
     let buttons = options.buttons ? getButtons() : "";
     let htmlTags = "";
-    data = gridify(data, htmlTags, "", options.titleClass); // data conversion
+    data = gridify(data, htmlTags, "", options.tableClass); // data conversion
     data == "" ?
       $(container).html(
         title +
         "<div class='alert alert-warning'>Gösterilecek Hiç Bir Şonuç Bulunamadı!</div>"
       ) :
       $(container).html(title + buttons + data);
-    /* $(container + " .gridify-table").each(function(i1, el1) {
-       let params = [];
-       $(el1)
-         .find("thead th")
-         .each(function(i2, el2) {
-           let param;
-           if ($(el1).parent("[gridify-content]").length > 0) {
-             param =
-               $(el1).parent("[gridify-content]").attr("gridify-content") +
-               "-" +
-               $(el2).text();
-           } else {
-             param = $(el2).text();
-           }
-           $(el2).attr("gridify-title", param);
-           params.push($(el2).text());
-         });
-       $(el1)
-         .find("tbody tr")
-         .each(function(i3, el3) {
-           $(el3)
-             .children("td")
-             .each(function(i4, el4) {
-               let param;
-               if ($(el1).parent("[gridify-content]").length > 0) {
-                 param =
-                   $(el1).parent("[gridify-content]").attr("gridify-content") +
-                   "-" +
-                   params[i4];
-               } else {
-                 param = params[i4];
-               }
-               $(el4).attr("gridify-content", param);
-             });
-         });
-     });*/
     cssRender(container);
   }
 }
