@@ -17,7 +17,7 @@ GRIDIFY.convertToTable(container, data, options)
 + title: tables title
 + buttons: a boolean value that shows helper buttons while true and vice versa
 + tableClass: add class to the table
-+ labels: [Labels](https://github.com/akkus12345/jsongridify "Labels")
++ labels: [Labels](#labels)
 
 Example:
 ```javascript
