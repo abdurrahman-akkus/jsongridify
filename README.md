@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/version-v0.1-blue)
+![](https://img.shields.io/badge/version-v0.1-blue) ![](https://img.shields.io/badge/licence-MIT-brightgreen)
 
 # JSON Gridify
 JSON Gridify is a library that generates table from raw data. Even nested json array and object can be converted.
