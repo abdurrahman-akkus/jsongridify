@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/version-v0.1-blue)
+
 # JSON Gridify
 JSON Gridify is a library that generates table from raw data. Even nested json array and object can be converted.
 Note: It uses JQuery. 
@@ -31,7 +33,7 @@ options:{
 
 #### Labels
  + label name: the name that refer to each attribute of real data
-   + tag: appears as table head of the related attribute
+   + tag: appears as table header-th of the related attribute (if there is no tag, attribute name comes from raw data is used as th)
    + modifier: converts data to a dom element or a modified text node
    + class: adds class to the related th and td elements
    + css: adds css style to the related th and td elements
@@ -81,6 +83,7 @@ let options = {
         }
       },
       exempt: {
+        tag: "Exempt",
         status: {
           tag: "Status",
           modifier: {
