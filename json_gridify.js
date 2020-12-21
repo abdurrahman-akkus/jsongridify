@@ -1,3 +1,9 @@
+/*
+Author: Abdurrahman AKKUŞ
+License: MIT License
+Version: 0.1
+*/
+
 var LABELS = {};
 
 let GRIDIFY = {
